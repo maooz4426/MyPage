@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #0f172a; /* slate-900の色 */
 }
 
 body {
