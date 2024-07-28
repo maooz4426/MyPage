@@ -18,7 +18,7 @@ export default function Home() {
                 >
                     <div>
                         <Image
-                            src="public/images/img.png"
+                            src="/images/img.png"
                             alt="icon"
                             width={500}
                             height={500}
@@ -43,7 +43,9 @@ export default function Home() {
                     animate={{opacity: 1}}
                     transition={{duration: 1, delay: 2}}
                 >
-                    <IconLink src=`${BASE_PATH}/images/Github.svg`
+
+                    <IconLink src={`${BASE_PATH}/images/Github.svg`}
+
                                    alt="Github logo"
                                    href="https://github.com/maooz4426"
                     />
