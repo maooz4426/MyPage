@@ -18,7 +18,7 @@ export default function Home() {
                 >
                     <div>
                         <Image
-                            src="/images/img.png"
+                            src={`${BASE_PATH}/images/img.png`}
                             alt="icon"
                             width={500}
                             height={500}
@@ -49,11 +49,11 @@ export default function Home() {
                                    alt="Github logo"
                                    href="https://github.com/maooz4426"
                     />
-                    <IconLink src="/images/qiita-icon.png"
+                    <IconLink src={`${BASE_PATH}/images/qiita-icon.png`}
                                    alt="qiita logo"
                                    href="https://qiita.com/maooz4426"
                     />
-                    <IconLink src="/images/x-logo.svg"
+                    <IconLink src={`${BASE_PATH}/images/x-logo.svg`}
                                    alt="xicon logo"
                                    href="https://x.com/maotan426"
                     />
