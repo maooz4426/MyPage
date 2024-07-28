@@ -16,7 +16,7 @@ export default function Home() {
                 >
                     <div>
                         <Image
-                            src="/images/img.png"
+                            src="public/images/img.png"
                             alt="icon"
                             width={500}
                             height={500}
