@@ -2,6 +2,8 @@
 import Image from "next/image";
 import {AnimatePresence, motion} from 'framer-motion'
 import IconLink from "../components/iconLink";
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
 
 export default function Home() {
     return (
@@ -41,7 +43,7 @@ export default function Home() {
                     animate={{opacity: 1}}
                     transition={{duration: 1, delay: 2}}
                 >
-                    <IconLink src="/images/Github.svg"
+                    <IconLink src=`${BASE_PATH}/images/Github.svg`
                                    alt="Github logo"
                                    href="https://github.com/maooz4426"
                     />
