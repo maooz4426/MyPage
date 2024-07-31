@@ -76,14 +76,15 @@ export const Menubar:React.FC　= () =>{
                                 </motion.a>
 
                                 <motion.a
-                                    href={`${BASE_PATH}/about`}
+                                    href={`${BASE_PATH}/profile`}
                                     className="text-4xl text-white mb-8 cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    About
+                                    Profile
                                 </motion.a>
                                 <motion.a
+                                    href={`${BASE_PATH}/work`}
                                     className="text-4xl text-white cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
