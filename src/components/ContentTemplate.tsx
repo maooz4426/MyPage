@@ -9,8 +9,12 @@ import React from "react";
 export const ContentTemplate: React.FC<ContentTemplateProps> = ({children}) =>{
     return (
             <motion.div
-                className="h-96 w-4/5  backdrop-blur-lg rounded-md border border-gray-200/30 shadow-lg">
-
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: 1, delay: 2}}
+                // className=" w-4/5  backdrop-blur-lg rounded-md border border-gray-200/30 shadow-lg">
+                className="w-4/5 mx-auto my-10"
+                >
                 {children}
             </motion.div>
 

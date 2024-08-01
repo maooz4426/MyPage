@@ -3,6 +3,7 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import React from "react";
 import nextConfig from "../../next.config.mjs";
+import Link from "next/link";
 const BASE_PATH = nextConfig.basePath || "";
 
 
@@ -67,29 +68,38 @@ export const Menubar:React.FC　= () =>{
                                 transition={{duration: 0.3}}
                             >
                                 <motion.a
-                                    href={`${BASE_PATH}/`}
+                                    // href={`${BASE_PATH}/`}
                                     className="text-4xl text-white mb-8 cursor-pointer"
                                     whileHover={{scale:1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    Home
+                                    <Link href={`${BASE_PATH}/`}>
+                                        Home
+                                    </Link>
+
                                 </motion.a>
 
                                 <motion.a
-                                    href={`${BASE_PATH}/profile`}
+                                    // href={`${BASE_PATH}/profile`}
                                     className="text-4xl text-white mb-8 cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    Profile
+                                    <Link href={`${BASE_PATH}/profile`}>
+                                        Profile
+                                    </Link>
+
                                 </motion.a>
                                 <motion.a
-                                    href={`${BASE_PATH}/work`}
+                                    // href={`${BASE_PATH}/work`}
                                     className="text-4xl text-white cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    Work
+                                    <Link href={`${BASE_PATH}/work`}>
+                                        Work
+                                    </Link>
+
                                 </motion.a>
 
                             </motion.nav>
