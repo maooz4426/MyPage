@@ -1,7 +1,7 @@
 "use client"; // 500エラーを防ぐために必要
 import Image from "next/image";
 import {AnimatePresence, motion} from 'framer-motion'
-import IconLink from "../components/iconLink";
+import IconLink from "@/components/IconLink";
 import nextConfig from "../../next.config.mjs";
 const BASE_PATH = nextConfig.basePath || "";
 
@@ -18,7 +18,7 @@ export default function Home() {
                 >
                     <div>
                         <Image
-                            src={`${BASE_PATH}/images/img.png`}
+                            src="/images/img.png"
                             alt="icon"
                             width={500}
                             height={500}
@@ -43,17 +43,15 @@ export default function Home() {
                     animate={{opacity: 1}}
                     transition={{duration: 1, delay: 2}}
                 >
-
                     <IconLink src={`${BASE_PATH}/images/Github.svg`}
-
                                    alt="Github logo"
                                    href="https://github.com/maooz4426"
                     />
-                    <IconLink src={`${BASE_PATH}/images/qiita-icon.png`}
+                    <IconLink src="/images/qiita-icon.png"
                                    alt="qiita logo"
                                    href="https://qiita.com/maooz4426"
                     />
-                    <IconLink src={`${BASE_PATH}/images/x-logo.svg`}
+                    <IconLink src="/images/x-logo.svg"
                                    alt="xicon logo"
                                    href="https://x.com/maotan426"
                     />
