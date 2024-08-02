@@ -13,7 +13,8 @@ const iconSize:number = 50;
 // interface使う時はReact.FC使える
 const IconLink: React.FC<IconLinkProps> = (props)=>{
     return(
-        <div className="mx-5 transition duration-300 hover:scale-150">
+        // inline-blockを入れないと横に広がってしまう
+        <div className="mx-5 inline-block transition duration-300 hover:scale-150">
             <Link href={props.href} rel="noopener noreferrer" target="_blank">
                 <Image src={props.src}
                 alt={props.alt}
