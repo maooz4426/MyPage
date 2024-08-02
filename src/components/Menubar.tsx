@@ -73,7 +73,8 @@ export const Menubar:React.FC　= () =>{
                                     whileHover={{scale:1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    <Link href={`${BASE_PATH}/`}>
+                                    {/*Linkはサブディレクトリを考慮する*/}
+                                    <Link href={`/`}>
                                         Home
                                     </Link>
 
@@ -85,7 +86,7 @@ export const Menubar:React.FC　= () =>{
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    <Link href={`${BASE_PATH}/profile`}>
+                                    <Link href={`/profile`}>
                                         Profile
                                     </Link>
 
@@ -96,7 +97,7 @@ export const Menubar:React.FC　= () =>{
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
                                 >
-                                    <Link href={`${BASE_PATH}/work`}>
+                                    <Link href={`/work`}>
                                         Work
                                     </Link>
 
