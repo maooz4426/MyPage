@@ -74,7 +74,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Uncomment output
         run: |
-            sed -i "s/\// output: 'export'/output: 'export'" next.config.js
+            sed -i "s|// output: 'export'|output: 'export'" next.config.js
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
