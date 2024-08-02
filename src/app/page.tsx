@@ -22,7 +22,7 @@ export default function Home() {
                             key="image-container"
                         >
                             <Image
-                                src="/images/img.png"
+                                src={`${BASE_PATH}/images/img.png`}
                                 alt="icon"
                                 width={500}
                                 height={500}
