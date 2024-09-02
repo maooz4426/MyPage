@@ -19,11 +19,14 @@ export const Menubar:React.FC　= () =>{
     const toggleMenu = () =>{
         setIsOpenMenu(!isOpenMenu);
         console.log("open menu",isOpenMenu);
-
     }
+
+     const closeMenu = () =>{
+        setIsOpenMenu(false);
+     }
     return (
 
-        <div>
+        <div className=" justify-end">
             {!isOpenMenu ? (<button onClick={toggleMenu} className="relative top-10 left-10 size-3">
                 <div>
                     <svg
@@ -72,6 +75,7 @@ export const Menubar:React.FC　= () =>{
                                     className="text-4xl text-white mb-8 cursor-pointer"
                                     whileHover={{scale:1.1}}
                                     whileTap={{scale: 0.95}}
+                                    onClick={closeMenu}
                                 >
                                     <Link href={`${BASE_PATH}/`}>
                                         Home
@@ -84,6 +88,8 @@ export const Menubar:React.FC　= () =>{
                                     className="text-4xl text-white mb-8 cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
+                                    onClick={closeMenu}
+
                                 >
                                     <Link href={`${BASE_PATH}/profile`}>
                                         Profile
@@ -95,6 +101,8 @@ export const Menubar:React.FC　= () =>{
                                     className="text-4xl text-white cursor-pointer"
                                     whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}}
+                                    onClick={closeMenu}
+
                                 >
                                     <Link href={`${BASE_PATH}/work`}>
                                         Work

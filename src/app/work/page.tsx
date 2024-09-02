@@ -36,7 +36,7 @@ export default function WorkPage (){
   return(
       <div>
 
-          <Menubar/>
+          {/*<Menubar/>*/}
           {/*AnimatePresenceを使うとふわっとした消えるアニメーションとか使える*/}
           <AnimatePresence>
           {dialogType === DialogType.Plateau && (

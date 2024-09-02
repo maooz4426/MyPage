@@ -20,10 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`inter.className bg-slate-900 min-h-screen`}>
-
-        {children}
-      </body>
+    <body className={`inter.className bg-slate-900 min-h-screen`}>
+    <div className="grid grid-cols-4 ">
+        <div className="col-span-3"></div>
+        <div className="col-span-1 z-50">
+            <Menubar/>{/*gridの中に入れないと動かない*/}
+        </div>
+    </div>
+    {children}
+    </body>
     </html>
   );
 }

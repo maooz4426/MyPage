@@ -22,7 +22,10 @@ export default function Home() {
 
             <AnimatePresence mode="wait">
                 <div className="relative grid grid-cols-4">
-                <Menubar/>{/*gridの中に入れないと動かない*/}
+                {/*    <div className="col-span-3"></div>*/}
+                {/*    <div className="col-span-1">*/}
+                {/*<Menubar/>/!*gridの中に入れないと動かない*!/*/}
+                {/*    </div>*/}
                     <div className="main col-span-4 mx-auto my-10 ">
                     <motion.div
                             initial={{opacity: 0}}
