@@ -17,9 +17,9 @@ const IconLink: React.FC<IconLinkProps> = (props)=>{
         <div className="mx-5 inline-block transition duration-300 hover:scale-150 ">
             <Link href={props.href} rel="noopener noreferrer" target="_blank">
                 <Image src={props.src}
-                alt={props.alt}
-                width={iconSize}
-                height={iconSize}/>
+                    alt={props.alt}
+                    width={iconSize}
+                    height={iconSize}/>
             </Link>
         </div>
     )

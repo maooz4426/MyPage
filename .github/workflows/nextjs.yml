@@ -61,6 +61,7 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+          generator_config_file: next.config.mjs
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -73,7 +74,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Uncomment output
         run: |
-            sed -i "s/\// output: 'export'/output: 'export'" next.config.js
+            sed -i "s|// output: 'export'|output: 'export' |g" next.config.mjs
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
