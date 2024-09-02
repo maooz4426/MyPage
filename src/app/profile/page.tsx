@@ -6,7 +6,7 @@ import React from "react";
 export default function AboutPage() {
     return(
         <div>
-        <Menubar/>
+        {/*<Menubar/>*/}
             <AnimatePresence mode="wait">
                 <motion.div
                     initial={{opacity: 0}}
