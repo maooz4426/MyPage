@@ -23,22 +23,22 @@ export default function Home() {
             <AnimatePresence mode="wait">
                 <div className="relative grid grid-cols-4">
                 <Menubar/>{/*gridの中に入れないと動かない*/}
-
-                    <div className="main col-span-4 mx-auto my-10">
+                    <div className="main col-span-4 mx-auto my-10 ">
                     <motion.div
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             transition={{duration: 0.5, delay: 0.5}}
                             key="image-container"
+                            className="flex justify-center items-center"
                         >
                             <Image
                                 src="/images/img.png"
                                 alt="icon"
                                 width={500}
                                 height={500}
+                                className="size-96 sm:size-full"
                             />
-                        </motion.div>
-
+                    </motion.div>
                         <motion.div
                             className="flex items-center justify-center my-5"
                             initial={{opacity: 0}}
@@ -46,7 +46,7 @@ export default function Home() {
                             transition={{duration: 1, delay: 1}}
                             key="image-container"
                         >
-                            <div className="name text-center text-9xl">
+                            <div className="name text-center text-8xl sm:text-9xl">
                                 <h1>MAOZ</h1>
                             </div>
                         </motion.div>

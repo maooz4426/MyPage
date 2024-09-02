@@ -142,7 +142,6 @@ export default function WorkPage (){
 
           </div>
 
-
       </div>
 
 )
