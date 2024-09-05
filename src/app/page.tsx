@@ -1,33 +1,25 @@
 "use client"; // 500エラーを防ぐために必要
 import Image from "next/image";
 import {AnimatePresence, motion} from 'framer-motion'
-import IconLink from "../components/IconLink";
+import IconLink from "@/components/IconLink";
 import nextConfig from "../../next.config.mjs";
-import React from "react"
-import {Menubar} from "@/components/Menubar";
 const BASE_PATH = nextConfig.basePath || "";
-
+import {Menubar} from "@/components/Menubar";
 
 export default function Home() {
-    // const[openMenu,setOpenMenu]=React.useState(false);
-    //
-    // const toggleMenu = () =>{
-    //     setOpenMenu(!openMenu);
-    //     console.log("open menu",openMenu);
-    //
-    // }
-
     return (
         <div className={`screen min-h-screen `}>
 
             <AnimatePresence mode="wait">
                 <div className="relative grid grid-cols-4">
+
                 {/*    <div className="col-span-3"></div>*/}
                 {/*    <div className="col-span-1">*/}
                 {/*<Menubar/>/!*gridの中に入れないと動かない*!/*/}
                 {/*    </div>*/}
                     <div className="main col-span-4 mx-auto my-10 ">
                     <motion.div
+
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             transition={{duration: 0.5, delay: 0.5}}
@@ -35,7 +27,7 @@ export default function Home() {
                             className="flex justify-center items-center"
                         >
                             <Image
-                                src="/images/img.png"
+                                src={`${BASE_PATH}/images/img.png`}
                                 alt="icon"
                                 width={500}
                                 height={500}
