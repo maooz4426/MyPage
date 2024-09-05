@@ -29,8 +29,8 @@ export default function Home() {
                             <Image
                                 src={`${BASE_PATH}/images/img.png`}
                                 alt="icon"
-                                width={500}
-                                height={500}
+                                width={400}
+                                height={400}
                                 className="size-96 sm:size-full"
                             />
                     </motion.div>
