@@ -31,7 +31,7 @@ export default function Home() {
                                 alt="icon"
                                 width={400}
                                 height={400}
-                                className="size-96 sm:size-full"
+                                className="size-96"
                             />
                     </motion.div>
                         <motion.div
